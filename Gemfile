@@ -58,6 +58,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'bootstrap', '~> 4.0.0'
+gem 'petergate', '~> 1.8', '>= 1.8.1'
 
 
 
