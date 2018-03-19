@@ -15,3 +15,11 @@
 //= require jquery-ui
 //= require turbolinks
 //= require_tree .
+
+let ingredients = document.querySelector('#ingredient-btn');
+let recipes = document.querySelector('#recipe-btn');
+let categories = document.querySelector('#category-btn');
+
+ingredients.addEventListener('click');
+recipes.addEventListener('click');
+categories.addEventListener('click');
