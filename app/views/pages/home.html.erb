@@ -1,26 +1,38 @@
 
 
-  <div class="masthead">
-    <h1>Welcome!</h1>
-  </div>
+<div class="masthead">
+  <h1>Welcome!</h1>
+</div>
 
-  <div class="row">
-    <div class="col-md-8">
-      <div class="cont-nav">
-        <input type='button' id="ingredient-btn" value='Ingredients'>
-        <input type="button" id="recipe-btn" value="Recipes">
-        <input type="button" id="category-btn" value="Categories">
-      </div>
-
-      <div class="main-content">
-
-      </div>
+<div class="row">
+  <div class="col-md-8">
+    <div class="cont-nav">
+      <%= link_to 'Recipes', recipes_path, class: 'btn btn-primary' %>
+      <a type='button' id="ingredient-btn">Ingredients</a>
+      <a type="button" id="recipe-btn">Recipes</a>
+      <a type="button" id="category-btn">Categories</a>
     </div>
 
-    <div class="col-md-4">
-      <div class="home-sidebar">
-        <h1>This is the sidebar</h1>
-      </div>
+    <div class="main-content">
+
     </div>
   </div>
 
+  <div class="col-md-4">
+    <div class="home-sidebar">
+      <h1>This is the sidebar</h1>
+    </div>
+  </div>
+</div>
+
+<script>
+  const ingredient = document.querySelector('#ingredient-btn');
+  const recipe = document.querySelector('#recipe-btn');
+  const category = document.querySelector('#category-btn');
+
+  ingredient.addEventListener('click', showIngredients);
+  recipe.addEventListener('click', goToRecipes);
+  category.addEventListener('click', goToCategories);
+
+
+</script>
